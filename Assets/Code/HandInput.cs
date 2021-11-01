@@ -7,36 +7,35 @@ public class HandInput : MonoBehaviour
 {
     public TextMesh outText;
     public XRNode handRole = XRNode.LeftHand;
-    InputDevice handController;
-    void Start()
-    {
-        handController = InputDevices.GetDeviceAtXRNode(handRole);
-    }
-
 
     void Update()
     {
 
-        handController.TryGetFeatureValue(CommonUsages.triggerButton, out bool hTrigger);
-        handController.TryGetFeatureValue(CommonUsages.primaryButton, out bool pTrigger);
-        handController.TryGetFeatureValue(CommonUsages.secondaryButton, out bool sTrigger);
-        handController.TryGetFeatureValue(CommonUsages.menuButton, out bool mButton);
+        InputDevices.GetDeviceAtXRNode(handRole).TryGetFeatureValue(CommonUsages.triggerButton, out bool trigger);
+        InputDevices.GetDeviceAtXRNode(handRole).TryGetFeatureValue(CommonUsages.gripButton, out bool grip);
+        InputDevices.GetDeviceAtXRNode(handRole).TryGetFeatureValue(CommonUsages.primaryButton, out bool pButton);
+        InputDevices.GetDeviceAtXRNode(handRole).TryGetFeatureValue(CommonUsages.secondaryButton, out bool sButton);
+        InputDevices.GetDeviceAtXRNode(handRole).TryGetFeatureValue(CommonUsages.menuButton, out bool mButton);
 
-        if (hTrigger)
+        if (trigger)
         {
-            outText.text = "hTrigger";
+            outText.text = "trigger";
         }
-        else if (pTrigger)
+        else if (grip)
         {
-            outText.text = "pTrigger";
+            outText.text = "grip";
         }
-        else if (sTrigger)
+        else if (pButton)
         {
-            outText.text = "sTrigger";
+            outText.text = "primary Button";
+        }
+        else if (sButton)
+        {
+            outText.text = "secondary Button";
         }
         else if (mButton)
         {
-            outText.text = "mButton";
+            outText.text = "menu Button";
         }
         else
             outText.text = "none";
