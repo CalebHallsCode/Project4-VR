@@ -12,6 +12,11 @@ public class FireSpread : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ObjectBurning parent= GetComponentInParent<ObjectBurning>();
+        if (parent)
+        {
+            parent.numOfFire += 1;
+        }
         Destroy(gameObject,lifetime);
         StartCoroutine(Spread());
     }
@@ -40,6 +45,14 @@ public class FireSpread : MonoBehaviour
                 }
             }
             yield return null;
+        }
+    }
+    void OnDestroy()
+    {
+        ObjectBurning parent = GetComponentInParent<ObjectBurning>();
+        if (parent)
+        {
+            parent.numOfFire -= 1;
         }
     }
 }

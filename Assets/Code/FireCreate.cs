@@ -11,7 +11,7 @@ public class FireCreate : MonoBehaviour
     {
         Rigidbody rb = GetComponent<Rigidbody>();
         rb.AddForce(new Vector3 (Random.Range(-1,1), Random.Range(0, 1), Random.Range(-1, 1))*spreadForce);
-        Destroy(gameObject, 2f);
+        Destroy(gameObject, 1f);
     }
 
     // Update is called once per frame
