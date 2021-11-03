@@ -50,7 +50,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireball: {fileID: 5613662318795621251, guid: 92650a2a4083a4232a09ae6bfcce349c, type: 3}
-  firePrefab: {fileID: 7632301153289573527}
   interval: 5
   lifetime: 12
   offset: {x: 0, y: 1, z: 0}
@@ -81,29 +80,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire
       objectReference: {fileID: 0}
-    - target: {fileID: 5352601780688892538, guid: e268b8025a1a7d145a7bcca7bfa4e7f0, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5352601780688892538, guid: e268b8025a1a7d145a7bcca7bfa4e7f0, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5352601780688892541, guid: e268b8025a1a7d145a7bcca7bfa4e7f0, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 206133747868406268, guid: 7c0eba391e2729247a38fd91bc8473f3, type: 3}
     - target: {fileID: 5352601780688892542, guid: e268b8025a1a7d145a7bcca7bfa4e7f0, type: 3}
       propertyPath: m_RootOrder
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5352601780688892542, guid: e268b8025a1a7d145a7bcca7bfa4e7f0, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.1768793
-      objectReference: {fileID: 0}
-    - target: {fileID: 5352601780688892542, guid: e268b8025a1a7d145a7bcca7bfa4e7f0, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.1226975
       objectReference: {fileID: 0}
     - target: {fileID: 5352601780688892542, guid: e268b8025a1a7d145a7bcca7bfa4e7f0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -146,24 +125,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5352601780688892543, guid: e268b8025a1a7d145a7bcca7bfa4e7f0, type: 3}
-      propertyPath: count
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5352601780688892543, guid: e268b8025a1a7d145a7bcca7bfa4e7f0, type: 3}
       propertyPath: spread
-      value: 0.053
-      objectReference: {fileID: 0}
-    - target: {fileID: 5352601780688892543, guid: e268b8025a1a7d145a7bcca7bfa4e7f0, type: 3}
-      propertyPath: billboard
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5352601780688892543, guid: e268b8025a1a7d145a7bcca7bfa4e7f0, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5352601780688892543, guid: e268b8025a1a7d145a7bcca7bfa4e7f0, type: 3}
-      propertyPath: thickness
-      value: 20
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e268b8025a1a7d145a7bcca7bfa4e7f0, type: 3}
@@ -452,6 +415,10 @@ PrefabInstance:
     - target: {fileID: 8894026067052845959, guid: fbcd94ad8debfa94cae4dfeb029f08c7, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8894026067052845959, guid: fbcd94ad8debfa94cae4dfeb029f08c7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbcd94ad8debfa94cae4dfeb029f08c7, type: 3}

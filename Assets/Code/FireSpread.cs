@@ -65,13 +65,12 @@ public class FireSpread : MonoBehaviour
     //        Instantiate(firePrefab,collision.GetContact(0).point,Quaternion.identity);
     //    }
     //}
-    void OnTriggerEnter(Collider other)
-    {
-        ObjectBurning collideObj = other.GetComponent<ObjectBurning>();
-        if (collideObj && collideObj.numOfFire <= 0)
-        {
-            collideObj.numOfFire += 1;
-            Instantiate(fireball, transform.position, Quaternion.identity).GetComponent<FireCreate>().spreadForce = 0 ;
-        }
-    }
+    //void OnTriggerEnter(Collider other)
+    //{
+    //    ObjectBurning collideObj = other.GetComponent<ObjectBurning>();
+    //    if (collideObj && collideObj.numOfFire <= 0)
+    //    {
+    //        Instantiate(fireball, transform.position, Quaternion.identity).GetComponent<FireCreate>().spreadForce = 0 ;
+    //    }
+    //}
 }
