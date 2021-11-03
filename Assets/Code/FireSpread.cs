@@ -5,6 +5,7 @@ using UnityEngine;
 public class FireSpread : MonoBehaviour
 {
     public GameObject fireball;
+    //public GameObject firePrefab;
     public float interval, lifetime=10f;
     public Vector3 offset;
     public int spreadNum = 1;
@@ -53,6 +54,24 @@ public class FireSpread : MonoBehaviour
         if (parent)
         {
             parent.numOfFire -= 1;
+        }
+    }
+    //void OnTriggerEnter(Collision collision)
+    //{
+    //    ObjectBurning collideObj=collision.gameObject.GetComponent<ObjectBurning>();
+    //    if (collideObj&& collideObj.numOfFire<=0)
+    //    {
+    //        collideObj.numOfFire += 1;
+    //        Instantiate(firePrefab,collision.GetContact(0).point,Quaternion.identity);
+    //    }
+    //}
+    void OnTriggerEnter(Collider other)
+    {
+        ObjectBurning collideObj = other.GetComponent<ObjectBurning>();
+        if (collideObj && collideObj.numOfFire <= 0)
+        {
+            collideObj.numOfFire += 1;
+            Instantiate(fireball, transform.position, Quaternion.identity).GetComponent<FireCreate>().spreadForce = 0 ;
         }
     }
 }
