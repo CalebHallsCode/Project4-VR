@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObjectBurning : MonoBehaviour
 {
     public int numOfFire;
-    public float maxHealth;
+    public float maxHealth,fireSize=1;
     public Color onFireColor = Color.black;
     private Color startColor;
     private float damage = 1f,health;

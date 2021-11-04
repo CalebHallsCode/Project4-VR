@@ -5,6 +5,7 @@ using UnityEngine;
 public class FireCreate : MonoBehaviour
 {
     public GameObject fire;
+    public GameObject firePoint;
     public float spreadForce;
     // Start is called before the first frame update
     void Start()
@@ -22,7 +23,10 @@ public class FireCreate : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         Vector3 point = collision.contacts[0].point;
-        Instantiate(fire,point,Quaternion.identity,collision.transform);
+        GameObject newPoint=Instantiate(firePoint, point, Quaternion.identity, collision.gameObject.transform);
+        FireSpread newFire=Instantiate(fire,point,Quaternion.identity).GetComponent<FireSpread>();
+        newFire.point = newPoint.transform;
+        newFire.fireObj = collision.gameObject.GetComponent<ObjectBurning>();
         Destroy(gameObject);
     }
 }

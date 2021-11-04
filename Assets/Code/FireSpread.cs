@@ -5,19 +5,25 @@ using UnityEngine;
 public class FireSpread : MonoBehaviour
 {
     public GameObject fireball;
+    public ObjectBurning fireObj;
+    public Transform fire;
+    private Transform followPoint;
     //public GameObject firePrefab;
     public float interval, lifetime=10f;
     public Vector3 offset;
     public int spreadNum = 1;
     public bool canSpread;
+    public Transform point;
     // Start is called before the first frame update
     void Start()
     {
-        ObjectBurning parent= GetComponentInParent<ObjectBurning>();
-        if (parent)
+        //ObjectBurning parent= GetComponentInParent<ObjectBurning>();
+        if (fireObj)
         {
-            parent.numOfFire += 1;
+            fireObj.numOfFire += 1;
+            fire.localScale = Vector3.one * fireObj.fireSize;
         }
+        transform.localScale = Vector3.one * fireObj.fireSize;
         Destroy(gameObject,lifetime);
         StartCoroutine(Spread());
     }
@@ -25,7 +31,7 @@ public class FireSpread : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.position = point.position;
     }
     IEnumerator Spread()
     {
@@ -50,10 +56,9 @@ public class FireSpread : MonoBehaviour
     }
     void OnDestroy()
     {
-        ObjectBurning parent = GetComponentInParent<ObjectBurning>();
-        if (parent)
+        if (fireObj)
         {
-            parent.numOfFire -= 1;
+            fireObj.numOfFire -= 1;
         }
     }
     //void OnTriggerEnter(Collision collision)

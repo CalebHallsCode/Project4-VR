@@ -126,4 +126,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fire: {fileID: 7632301153289573527, guid: dc3e604721c3c4272b87c4fa23caf400, type: 3}
+  firePoint: {fileID: 2915109965046635887, guid: f1aac6f067cc34545b26e32e4d3d13bc, type: 3}
   spreadForce: 10

@@ -158,6 +158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfFire: 0
   maxHealth: 5
+  fireSize: 1
   onFireColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &56982955
 Rigidbody:
@@ -464,8 +465,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 644679057}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.9184, y: 0.61, z: 9.8117}
-  m_LocalScale: {x: 8.474997, y: 0.28448, z: 7.76457}
+  m_LocalPosition: {x: -13.56, y: 0.64, z: 9.8117}
+  m_LocalScale: {x: 8, y: 2, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
@@ -484,6 +485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfFire: 0
   maxHealth: 100
+  fireSize: 4
   onFireColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &677008950
 GameObject:
@@ -737,6 +739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfFire: 0
   maxHealth: 5
+  fireSize: 1
   onFireColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &742459870
 GameObject:
@@ -1104,6 +1107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfFire: 0
   maxHealth: 5
+  fireSize: 1
   onFireColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &903722441
 Rigidbody:
@@ -1624,6 +1628,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfFire: 0
   maxHealth: 5
+  fireSize: 1
   onFireColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1136358564
 Rigidbody:
@@ -1838,6 +1843,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfFire: 0
   maxHealth: 5
+  fireSize: 1
   onFireColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1228597475
 Rigidbody:
@@ -1966,6 +1972,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfFire: 0
   maxHealth: 5
+  fireSize: 1
   onFireColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1386339384
 Rigidbody:
@@ -2710,6 +2717,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfFire: 0
   maxHealth: 5
+  fireSize: 1
   onFireColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &1639278358
 Rigidbody:
@@ -3028,6 +3036,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfFire: 0
   maxHealth: 5
+  fireSize: 1
   onFireColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!54 &2039198488
 Rigidbody:
@@ -3143,7 +3152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7632301153289573520, guid: dc3e604721c3c4272b87c4fa23caf400, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.56
+      value: 0.938
       objectReference: {fileID: 0}
     - target: {fileID: 7632301153289573520, guid: dc3e604721c3c4272b87c4fa23caf400, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3180,6 +3189,10 @@ PrefabInstance:
     - target: {fileID: 7632301153289573527, guid: dc3e604721c3c4272b87c4fa23caf400, type: 3}
       propertyPath: m_Name
       value: Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 7632301154043498795, guid: dc3e604721c3c4272b87c4fa23caf400, type: 3}
+      propertyPath: thickness
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc3e604721c3c4272b87c4fa23caf400, type: 3}
