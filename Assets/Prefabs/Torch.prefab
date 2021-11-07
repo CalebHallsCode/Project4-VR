@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5085099458294412527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.499, z: -0}
+  m_LocalPosition: {x: 0, y: 0.459, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3421194707452967245}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 8553608839864620789}
   - component: {fileID: 5859309156759331391}
   - component: {fileID: 5085099456621706940}
-  - component: {fileID: 5085099456621706943}
+  - component: {fileID: 545984221}
   m_Layer: 6
   m_Name: Torch
   m_TagString: Untagged
@@ -131,7 +131,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &5085099456621706943
+--- !u!65 &545984221
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,8 +142,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.39999998, y: 2, z: 0.39999998}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.099999994, y: 0.5, z: 0.099999994}
+  m_Center: {x: 0.0001612883, y: 0.24999529, z: 0.0016157608}
 --- !u!1001 &5085099457998958045
 PrefabInstance:
   m_ObjectHideFlags: 0
