@@ -31,7 +31,14 @@ public class FireSpread : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = point.position;
+        if (point == null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            transform.position = point.position;
+        }
     }
     IEnumerator Spread()
     {
