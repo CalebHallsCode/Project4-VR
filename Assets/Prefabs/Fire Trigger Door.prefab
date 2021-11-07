@@ -188,10 +188,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire Trigger
       objectReference: {fileID: 0}
-    - target: {fileID: 2540813241454953160, guid: 98cdb8facb01b45ae9e76b49776ee2d7, type: 3}
-      propertyPath: onFire
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7125945279855502081, guid: 98cdb8facb01b45ae9e76b49776ee2d7, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -261,11 +257,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5481407028204036630}
     m_Modifications:
-    - target: {fileID: 1079331314903258704, guid: 98cdb8facb01b45ae9e76b49776ee2d7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 1079331314903258711, guid: 98cdb8facb01b45ae9e76b49776ee2d7, type: 3}
+    - target: {fileID: 1836604598591137487, guid: 98cdb8facb01b45ae9e76b49776ee2d7, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
