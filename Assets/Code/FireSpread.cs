@@ -12,7 +12,7 @@ public class FireSpread : MonoBehaviour
     public float interval, lifetime=10f;
     public Vector3 offset;
     public int spreadNum = 1;
-    public bool canSpread;
+    public bool canSpread,litForever=false;
     public Transform point;
     // Start is called before the first frame update
     void Start()
@@ -23,8 +23,11 @@ public class FireSpread : MonoBehaviour
             fireObj.numOfFire += 1;
             fire.localScale = Vector3.one * fireObj.fireSize;
         }
-        transform.localScale = Vector3.one * fireObj.fireSize;
-        Destroy(gameObject,lifetime);
+        //transform.localScale = Vector3.one * fireObj.fireSize;
+        if (!litForever)
+        {
+            Destroy(gameObject, lifetime);
+        }
         StartCoroutine(Spread());
     }
 

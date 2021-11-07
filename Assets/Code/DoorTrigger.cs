@@ -8,10 +8,12 @@ public class DoorTrigger : MonoBehaviour
     private List<GameObject> objectsOnTrigger;
     private bool isOpen;
     public bool openOnCollide=true;
+    private Renderer renderer;
     // Start is called before the first frame update
     void Start()
     {
         objectsOnTrigger = new List<GameObject>();
+        renderer = GetComponent<Renderer>();
     }
 
     // Update is called once per frame
@@ -20,10 +22,13 @@ public class DoorTrigger : MonoBehaviour
         if (!isOpen&&objectsOnTrigger.Count > 0) {
             door.SetDoor(openOnCollide);
             isOpen = true;
-        }else if (isOpen && objectsOnTrigger.Count <= 0)
+            renderer.material.color = Color.green;
+        }
+        else if (isOpen && objectsOnTrigger.Count <= 0)
         {
             door.SetDoor(!openOnCollide);
             isOpen = false;
+            renderer.material.color = Color.white;
         }
         for (int i=0;i<objectsOnTrigger.Count;i++)
         {
