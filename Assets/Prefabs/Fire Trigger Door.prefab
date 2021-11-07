@@ -79,7 +79,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d5ce31f3b3ca4426925b649d2108547, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggers: []
+  triggers:
+  - {fileID: 2932098839204632697}
+  - {fileID: 3917937122296087556}
 --- !u!1 &5481407028990136259
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,7 +95,7 @@ GameObject:
   - component: {fileID: 5481407028990136262}
   - component: {fileID: 5481407028990136257}
   m_Layer: 0
-  m_Name: Door
+  m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107,7 +109,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5481407028990136259}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.22, y: 1, z: -0.1}
+  m_LocalPosition: {x: 1.22, y: 1, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 5481407028204036630}
@@ -186,6 +188,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire Trigger
       objectReference: {fileID: 0}
+    - target: {fileID: 2540813241454953160, guid: 98cdb8facb01b45ae9e76b49776ee2d7, type: 3}
+      propertyPath: onFire
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7125945279855502081, guid: 98cdb8facb01b45ae9e76b49776ee2d7, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -237,6 +243,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7125945279855502081, guid: 98cdb8facb01b45ae9e76b49776ee2d7, type: 3}
   m_PrefabInstance: {fileID: 860786168158526129}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2932098839204632697 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2540813241454953160, guid: 98cdb8facb01b45ae9e76b49776ee2d7, type: 3}
+  m_PrefabInstance: {fileID: 860786168158526129}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36cfc1e00b7e84412b5f558588f96996, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1521520835986081484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -244,9 +261,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5481407028204036630}
     m_Modifications:
+    - target: {fileID: 1079331314903258704, guid: 98cdb8facb01b45ae9e76b49776ee2d7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079331314903258711, guid: 98cdb8facb01b45ae9e76b49776ee2d7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2505253161918271147, guid: 98cdb8facb01b45ae9e76b49776ee2d7, type: 3}
       propertyPath: m_Name
       value: Fire Trigger (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2540813241454953160, guid: 98cdb8facb01b45ae9e76b49776ee2d7, type: 3}
+      propertyPath: onFire
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7125945279855502081, guid: 98cdb8facb01b45ae9e76b49776ee2d7, type: 3}
       propertyPath: m_RootOrder
@@ -299,3 +328,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7125945279855502081, guid: 98cdb8facb01b45ae9e76b49776ee2d7, type: 3}
   m_PrefabInstance: {fileID: 1521520835986081484}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3917937122296087556 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2540813241454953160, guid: 98cdb8facb01b45ae9e76b49776ee2d7, type: 3}
+  m_PrefabInstance: {fileID: 1521520835986081484}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36cfc1e00b7e84412b5f558588f96996, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

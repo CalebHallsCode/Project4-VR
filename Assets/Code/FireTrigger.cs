@@ -11,7 +11,7 @@ public class FireTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Debug.Log(gameObject.layer);
     }
 
     // Update is called once per frame
@@ -21,11 +21,15 @@ public class FireTrigger : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.layer == 8)
+        if (collision.gameObject.CompareTag("Torch"))
         {
-            fire.SetActive(true);
-            onFire = true;
-            door.SetTrigger(triggerNum,true);
+            Onfire();
         }
+    }
+    public void Onfire()
+    {
+        fire.SetActive(true);
+        onFire = true;
+        door.SetTrigger(triggerNum, true);
     }
 }

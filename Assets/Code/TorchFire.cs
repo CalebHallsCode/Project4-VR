@@ -22,7 +22,10 @@ public class TorchFire : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         Debug.Log("enter");
-        if (canFire)
+        if (collision.gameObject.layer == 10) {
+            collision.gameObject.GetComponent<FireTrigger>().Onfire();
+        }
+        else if (canFire)
         {
             Vector3 point = collision.contacts[0].point;
             GameObject newPoint = Instantiate(firePoint, point, Quaternion.identity, collision.gameObject.transform);

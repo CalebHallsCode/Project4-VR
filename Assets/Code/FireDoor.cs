@@ -37,6 +37,7 @@ public class FireDoor : MonoBehaviour
                 open= false;
             }
         }
+        Debug.Log(open);
         if (open)
         {
             door.SetDoor(true);
