@@ -12,15 +12,25 @@ public class PlayerMove : MonoBehaviour
     Transform camTrans;
     void Start()
     {
-        camTrans = Camera.main.transform;
-        _rigidbody = GetComponent<Rigidbody>();
+        handleVRStart();
     }
 
     void Update()
+    {
+        handleVRUpdate();
+    }
+    void handleVRStart()
+    {
+        camTrans = Camera.main.transform;
+        _rigidbody = GetComponent<Rigidbody>();
+
+    }
+    void handleVRUpdate()
     {
         InputDevices.GetDeviceAtXRNode(handRole).TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 direction);
         Vector3 moveDir = camTrans.forward * direction.y + camTrans.right * direction.x;
         moveDir.y = _rigidbody.velocity.y;
         _rigidbody.velocity = moveDir * speed;
+
     }
 }
