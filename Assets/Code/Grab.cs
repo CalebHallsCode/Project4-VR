@@ -9,7 +9,7 @@ public class Grab : MonoBehaviour
     public Transform holdPoint;
 
     private float launchForce = 10;
-    private float raycastDist = 50;
+    private float raycastDist = 20;
 
     private Transform hoverObject = null;
     private Transform heldObject = null;
