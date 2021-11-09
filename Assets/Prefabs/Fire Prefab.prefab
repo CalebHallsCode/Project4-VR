@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 7120009286751826126}
   m_Layer: 8
   m_Name: Fire Prefab
-  m_TagString: Untagged
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

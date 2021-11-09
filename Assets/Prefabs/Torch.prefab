@@ -9,9 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5085099458294412526}
-  m_Layer: 6
+  - component: {fileID: 2069967741060389020}
+  - component: {fileID: 8623894580638971883}
+  - component: {fileID: 4932593936095959403}
+  m_Layer: 8
   m_Name: FirePoint
-  m_TagString: Untagged
+  m_TagString: Torch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,6 +34,55 @@ Transform:
   m_Father: {fileID: 4691447336286198096}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &2069967741060389020
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5085099458294412527}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.21194577
+  m_Height: 0.6112881
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.3353442, z: 0}
+--- !u!54 &8623894580638971883
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5085099458294412527}
+  serializedVersion: 2
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!114 &4932593936095959403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5085099458294412527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63b33661513c24a34894f135cff7ab03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fire: {fileID: 7632301153289573527, guid: dc3e604721c3c4272b87c4fa23caf400, type: 3}
+  coolDown: 1
+  firePoint: {fileID: 2915109965046635887, guid: f1aac6f067cc34545b26e32e4d3d13bc, type: 3}
+  thisFire: {fileID: 3421194707452967242}
+  raycastLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &5354936991206786026
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,6 +302,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8265206809292504103, guid: dc3e604721c3c4272b87c4fa23caf400, type: 3}
+    - {fileID: 7120009286751826126, guid: dc3e604721c3c4272b87c4fa23caf400, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: dc3e604721c3c4272b87c4fa23caf400, type: 3}
 --- !u!1 &3421194707452967242 stripped
 GameObject:
@@ -261,37 +314,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7632301153289573520, guid: dc3e604721c3c4272b87c4fa23caf400, type: 3}
   m_PrefabInstance: {fileID: 5085099457998958045}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &5085099457998958047
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3421194707452967242}
-  serializedVersion: 2
-  m_Mass: 0.0000001
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!114 &5085099457998958046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3421194707452967242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63b33661513c24a34894f135cff7ab03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fire: {fileID: 7632301153289573527, guid: dc3e604721c3c4272b87c4fa23caf400, type: 3}
-  coolDown: 1
-  firePoint: {fileID: 2915109965046635887, guid: f1aac6f067cc34545b26e32e4d3d13bc, type: 3}
 --- !u!1001 &7523972255835886246
 PrefabInstance:
   m_ObjectHideFlags: 0
