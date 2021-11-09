@@ -82,7 +82,15 @@ public class Grab : MonoBehaviour
 
         heldRigidbody.isKinematic = false;
         heldRigidbody.AddForce(transform.forward * launchForce, ForceMode.VelocityChange);
-        heldObject.parent = null;
+        GameObject destroyOnload=GameObject.FindGameObjectWithTag("DestroyOnLoad");
+        if (destroyOnload)
+        {
+            heldObject.parent = destroyOnload.transform;
+        }
+        else
+        {
+            heldObject.parent = null;
+        }
         StartCoroutine(LetGo());
     }
 

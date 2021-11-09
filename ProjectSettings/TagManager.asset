@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Torch
   - Fire
+  - DestroyOnLoad
   layers:
   - Default
   - TransparentFX
