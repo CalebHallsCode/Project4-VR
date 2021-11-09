@@ -88,6 +88,7 @@ MonoBehaviour:
   offset: {x: 0, y: 1, z: 0}
   spreadNum: 1
   canSpread: 1
+  litForever: 0
   point: {fileID: 0}
 --- !u!136 &7120009286751826126
 CapsuleCollider:
@@ -227,6 +228,14 @@ PrefabInstance:
     - target: {fileID: 4730303083287778108, guid: 0b3d2f18a2969eb488c89395d8d11565, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730303083287778111, guid: 0b3d2f18a2969eb488c89395d8d11565, type: 3}
+      propertyPath: lower
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730303083287778111, guid: 0b3d2f18a2969eb488c89395d8d11565, type: 3}
+      propertyPath: upper
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b3d2f18a2969eb488c89395d8d11565, type: 3}
