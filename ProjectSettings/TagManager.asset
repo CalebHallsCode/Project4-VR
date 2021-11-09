@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Torch
+  - Fire
   layers:
   - Default
   - TransparentFX
