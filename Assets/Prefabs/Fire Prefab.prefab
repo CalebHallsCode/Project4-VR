@@ -41,7 +41,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7632301153289573520}
   - component: {fileID: 8265206809292504103}
-  - component: {fileID: 7120009286751826126}
   m_Layer: 8
   m_Name: Fire Prefab
   m_TagString: Fire
@@ -90,20 +89,6 @@ MonoBehaviour:
   canSpread: 1
   litForever: 0
   point: {fileID: 0}
---- !u!136 &7120009286751826126
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7632301153289573527}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  m_Radius: 0.5
-  m_Height: 1.5282617
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.9636717, z: 0}
 --- !u!1001 &2567935260553945940
 PrefabInstance:
   m_ObjectHideFlags: 0
