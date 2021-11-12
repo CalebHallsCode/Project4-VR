@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 610821482}
-  m_IndirectSpecularColor: {r: 0.039057337, g: 0.040132996, b: 0.040348113, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0.99999905, b: 0.99999905, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -883,6 +883,22 @@ PrefabInstance:
     - target: {fileID: 2944084159624730982, guid: fa9330f9d20cc4dd2aaf07a895b33d52, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944084159624730983, guid: fa9330f9d20cc4dd2aaf07a895b33d52, type: 3}
+      propertyPath: m_Size.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944084159624730983, guid: fa9330f9d20cc4dd2aaf07a895b33d52, type: 3}
+      propertyPath: m_Size.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944084159624730983, guid: fa9330f9d20cc4dd2aaf07a895b33d52, type: 3}
+      propertyPath: m_Size.z
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944084159624730983, guid: fa9330f9d20cc4dd2aaf07a895b33d52, type: 3}
+      propertyPath: m_Center.y
+      value: -30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa9330f9d20cc4dd2aaf07a895b33d52, type: 3}
@@ -15984,7 +16000,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6988928903669269468, guid: dfcd646201e2d45168e61b7365c87209, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 54.7
+      value: 38.5
       objectReference: {fileID: 0}
     - target: {fileID: 6988928903669269468, guid: dfcd646201e2d45168e61b7365c87209, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20867,7 +20883,7 @@ Terrain:
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 80
+  m_DetailObjectDistance: 50
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
