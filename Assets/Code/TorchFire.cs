@@ -9,11 +9,13 @@ public class TorchFire : MonoBehaviour
     private bool canFire=true;
     public GameObject firePoint,thisFire;
     private bool fireOn=true;
+    public AudioClip fireOnClip,fireOffClip;
+    private AudioSource audio;
     //public LayerMask raycastLayer;
     // Start is called before the first frame update
     void Start()
     {
-        
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -37,6 +39,7 @@ public class TorchFire : MonoBehaviour
                 FireSpread newFire = Instantiate(fire, point, Quaternion.identity).GetComponent<FireSpread>();
                 newFire.point = newPoint.transform;
                 newFire.fireObj = collision.gameObject.GetComponent<ObjectBurning>();
+                audio.PlayOneShot(fireOnClip);
                 StartCoroutine(CoodDown());
             }
         }
@@ -51,5 +54,13 @@ public class TorchFire : MonoBehaviour
     {
         fireOn = isOn;
         thisFire.SetActive(isOn);
+        if (isOn)
+        {
+            audio.PlayOneShot(fireOnClip);
+        }
+        else
+        {
+            audio.PlayOneShot(fireOffClip);
+        }
     }
 }
