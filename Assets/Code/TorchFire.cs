@@ -31,6 +31,7 @@ public class TorchFire : MonoBehaviour
             if (collision.gameObject.layer == 10)
             {
                 collision.gameObject.GetComponent<FireTrigger>().Onfire();
+                audio.PlayOneShot(fireOnClip);
             }
             else if (canFire)
             {
