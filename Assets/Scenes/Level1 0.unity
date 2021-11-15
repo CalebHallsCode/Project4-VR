@@ -303,10 +303,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.55
       objectReference: {fileID: 0}
-    - target: {fileID: 5481407028990136262, guid: bab4a474047b14461a088a7714421754, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3e0291bf5cb2b51418cfe6d41c1c34f5, type: 2}
     - target: {fileID: 8213726630292665391, guid: bab4a474047b14461a088a7714421754, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -2172,7 +2168,7 @@ PrefabInstance:
     - target: {fileID: 2627369417262356334, guid: 8ae034c649436433e855cad1f3e88674, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 3e0291bf5cb2b51418cfe6d41c1c34f5, type: 2}
+      objectReference: {fileID: 2100000, guid: 58de56ecd39c6c747a16f1b64b41baa7, type: 2}
     - target: {fileID: 2627369418048600761, guid: 8ae034c649436433e855cad1f3e88674, type: 3}
       propertyPath: m_Name
       value: Trigger Door (3)
@@ -4580,10 +4576,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.55
       objectReference: {fileID: 0}
-    - target: {fileID: 5481407028990136262, guid: bab4a474047b14461a088a7714421754, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3e0291bf5cb2b51418cfe6d41c1c34f5, type: 2}
     - target: {fileID: 8518287828046180369, guid: bab4a474047b14461a088a7714421754, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.1

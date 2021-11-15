@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 610821482}
-  m_IndirectSpecularColor: {r: 0.039057337, g: 0.040132996, b: 0.040348113, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0.99999905, b: 0.99999905, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -15321,6 +15321,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1269963613, guid: a12d44b8edf56674d997ef21b49804fe, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1269963613, guid: a12d44b8edf56674d997ef21b49804fe, type: 3}
+      propertyPath: MaxDistance
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1269963613, guid: a12d44b8edf56674d997ef21b49804fe, type: 3}
+      propertyPath: MinDistance
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4927366428491179323, guid: a12d44b8edf56674d997ef21b49804fe, type: 3}
       propertyPath: m_Name
       value: tower_new (2)
