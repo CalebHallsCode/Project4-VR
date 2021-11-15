@@ -302,6 +302,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tower_new (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4927366428491179323, guid: a12d44b8edf56674d997ef21b49804fe, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5704465360310681473, guid: a12d44b8edf56674d997ef21b49804fe, type: 3}
       propertyPath: m_RootOrder
       value: 31
