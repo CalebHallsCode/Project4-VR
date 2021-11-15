@@ -39,9 +39,13 @@ public class RainScript : MonoBehaviour
         Physics.Raycast(pos, Vector3.down, out raycastHit, distance, raycastLayer);
         if (raycastHit.collider.CompareTag("Torch"))
         {
-            raycastHit.collider.GetComponent<TorchFire>().TurnFire(false);
+            TorchFire torch=raycastHit.collider.GetComponent<TorchFire>();
+            if (torch.fireOn)
+            {
+                torch.TurnFire(false);
+                StartCoroutine(Cooldown());
+            }
         }
-        StartCoroutine(Cooldown());
     }
     private IEnumerator Cooldown()
     {

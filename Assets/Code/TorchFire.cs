@@ -6,9 +6,9 @@ public class TorchFire : MonoBehaviour
 {
     public GameObject fire;
     public float coolDown = 1f;
-    private bool canFire=true;
-    public GameObject firePoint,thisFire;
-    private bool fireOn=true;
+    private bool canFire = true;
+    public GameObject firePoint, thisFire;
+    public bool fireOn = true;
     public AudioClip fireOnClip,fireOffClip;
     private AudioSource audio;
     //public LayerMask raycastLayer;
